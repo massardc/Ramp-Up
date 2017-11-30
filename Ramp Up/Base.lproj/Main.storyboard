@@ -21,12 +21,25 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xno-1l-i6E">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4Q-Fa-nM0">
+                                <rect key="frame" x="258" y="576" width="107" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="RsQ-S3-tBF"/>
+                                    <constraint firstAttribute="width" constant="107" id="bts-ha-SHB"/>
+                                </constraints>
+                                <state key="normal" image="rampIcon"/>
+                                <connections>
+                                    <action selector="rampBtnPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="8xK-bI-LwB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Xno-1l-i6E" firstAttribute="leading" secondItem="cTf-Jg-kGp" secondAttribute="leading" id="Qdd-ag-gJo"/>
                             <constraint firstItem="Xno-1l-i6E" firstAttribute="top" secondItem="YOR-JL-nBe" secondAttribute="top" id="XID-UD-Rlm"/>
+                            <constraint firstItem="cTf-Jg-kGp" firstAttribute="trailing" secondItem="E4Q-Fa-nM0" secondAttribute="trailing" constant="10" id="YDw-hs-NGF"/>
                             <constraint firstItem="Xno-1l-i6E" firstAttribute="bottom" secondItem="cTf-Jg-kGp" secondAttribute="bottom" id="kyE-Ub-7d9"/>
+                            <constraint firstItem="cTf-Jg-kGp" firstAttribute="bottom" secondItem="E4Q-Fa-nM0" secondAttribute="bottom" constant="20" id="nVf-r9-4GF"/>
                             <constraint firstItem="Xno-1l-i6E" firstAttribute="trailing" secondItem="cTf-Jg-kGp" secondAttribute="trailing" id="yzA-tW-rup"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cTf-Jg-kGp"/>
@@ -40,4 +53,7 @@
             <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rampIcon" width="107" height="71"/>
+    </resources>
 </document>
