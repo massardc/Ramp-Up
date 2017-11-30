@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BF522C751FD0A86B00659CF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF522C741FD0A86B00659CF6 /* AppDelegate.swift */; };
 		BF522C771FD0A86B00659CF6 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BF522C761FD0A86B00659CF6 /* art.scnassets */; };
-		BF522C791FD0A86B00659CF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF522C781FD0A86B00659CF6 /* ViewController.swift */; };
+		BF522C791FD0A86B00659CF6 /* RampPlacerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF522C781FD0A86B00659CF6 /* RampPlacerVC.swift */; };
 		BF522C7C1FD0A86B00659CF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF522C7A1FD0A86B00659CF6 /* Main.storyboard */; };
 		BF522C7E1FD0A86B00659CF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF522C7D1FD0A86B00659CF6 /* Assets.xcassets */; };
 		BF522C811FD0A86B00659CF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF522C7F1FD0A86B00659CF6 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		BF522C711FD0A86B00659CF6 /* Ramp Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ramp Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF522C741FD0A86B00659CF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF522C761FD0A86B00659CF6 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		BF522C781FD0A86B00659CF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF522C781FD0A86B00659CF6 /* RampPlacerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampPlacerVC.swift; sourceTree = "<group>"; };
 		BF522C7B1FD0A86B00659CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF522C7D1FD0A86B00659CF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF522C801FD0A86B00659CF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,23 @@
 		BF522C731FD0A86B00659CF6 /* Ramp Up */ = {
 			isa = PBXGroup;
 			children = (
+				BF522C881FD0A9D900659CF6 /* Controller */,
 				BF522C741FD0A86B00659CF6 /* AppDelegate.swift */,
 				BF522C761FD0A86B00659CF6 /* art.scnassets */,
-				BF522C781FD0A86B00659CF6 /* ViewController.swift */,
 				BF522C7A1FD0A86B00659CF6 /* Main.storyboard */,
 				BF522C7D1FD0A86B00659CF6 /* Assets.xcassets */,
 				BF522C7F1FD0A86B00659CF6 /* LaunchScreen.storyboard */,
 				BF522C821FD0A86B00659CF6 /* Info.plist */,
 			);
 			path = "Ramp Up";
+			sourceTree = "<group>";
+		};
+		BF522C881FD0A9D900659CF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF522C781FD0A86B00659CF6 /* RampPlacerVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF522C791FD0A86B00659CF6 /* ViewController.swift in Sources */,
+				BF522C791FD0A86B00659CF6 /* RampPlacerVC.swift in Sources */,
 				BF522C751FD0A86B00659CF6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V836JU6J3D;
 				INFOPLIST_FILE = "Ramp Up/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clementm.Ramp-Up";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -296,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V836JU6J3D;
 				INFOPLIST_FILE = "Ramp Up/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.clementm.Ramp-Up";
 				PRODUCT_NAME = "$(TARGET_NAME)";

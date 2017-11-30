@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Ramp Up
 //
-//  Created by School on 30/11/2017.
+//  Created by ClementM on 30/11/2017.
 //  Copyright © 2017 ClementM. All rights reserved.
 //
 
